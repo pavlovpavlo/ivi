@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_default_1"
+    android:id="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/fragment_default_1"
+        android:name="org.vse.zaimy.online.ui.default_views.DefaultOneFragment"
+        android:label="fragment_default_1"
+        tools:layout="@layout/fragment_default_1" />
+    <fragment
+        android:id="@+id/fragment_default_2"
+        android:name="org.vse.zaimy.online.ui.default_views.DefaultTwoFragment"
+        android:label="fragment_default_2"
+        tools:layout="@layout/fragment_default_2" />
+    <fragment
+        android:id="@+id/fragment_default_3"
+        android:name="org.vse.zaimy.online.ui.default_views.DefaultThreeFragment"
+        android:label="fragment_default_3"
+        tools:layout="@layout/fragment_default_3" />
+    <fragment
+        android:id="@+id/fragment_default_4"
+        android:name="org.vse.zaimy.online.ui.default_views.DefaultFourFragment"
+        android:label="fragment_default_4"
+        tools:layout="@layout/fragment_default_4" />
+
+</navigation>

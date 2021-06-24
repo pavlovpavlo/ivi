@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loansFragment"
+    android:id="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/loansFragment"
+        android:name="org.vse.zaimy.online.ui.propositions.LoansFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_loans" />
+
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="org.vse.zaimy.online.ui.propositions.CreditsFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_credits" />
+
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="org.vse.zaimy.online.ui.propositions.CardsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_cards" />
+
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="org.vse.zaimy.online.ui.propositions.CardsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_cards" />
+
+</navigation>

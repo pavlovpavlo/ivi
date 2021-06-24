@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/ivi_main_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/playfair_display"
+        android:includeFontPadding="false"
+        android:text="Карты"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:src="@drawable/ic_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cards_tab_margin"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="@dimen/cards_tab_margin"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/info">
+
+        <LinearLayout
+            android:id="@+id/debet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_tabs_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:fontFamily="@font/ropasans_regular"
+                android:includeFontPadding="false"
+                android:text="ДЕБЕТОВЫЕ"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cards_tab_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:fontFamily="@font/ropasans_regular"
+                android:includeFontPadding="false"
+                android:text="КРЕДИТНЫЕ"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cards_tab_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rasstroch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:fontFamily="@font/ropasans_regular"
+                android:includeFontPadding="false"
+                android:text="РАССРОЧКИ"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cards_tab_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cards_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/cards_list_bg"
+        android:overScrollMode="never"
+        android:paddingTop="26dp"
+        android:paddingBottom="74dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

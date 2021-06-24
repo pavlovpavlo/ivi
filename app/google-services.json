@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200472782537",
+    "project_id": "id-169",
+    "storage_bucket": "id-169.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200472782537:android:575e73e8b3da201d5dcf18",
+        "android_client_info": {
+          "package_name": "org.vse.zaimy.online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200472782537-g24jspvaecnv5d45dl18639kb4dm3h33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvVF-ppRKKSe6VS6uWpb2uSscGJMBCJF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200472782537-g24jspvaecnv5d45dl18639kb4dm3h33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
