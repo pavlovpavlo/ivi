@@ -18,19 +18,105 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="82.2dp"
+        android:layout_height="74.2dp"
         android:background="@drawable/drop_shadow_tabs_bg"
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
+            android:id="@+id/main_tab_container"
             android:layout_width="match_parent"
-            android:layout_height="74dp"
+            android:layout_height="66dp"
             android:gravity="bottom"
-            android:paddingStart="2dp"
+            android:paddingStart="10dp"
             android:paddingTop="2dp"
-            android:paddingEnd="15dp"
-            android:paddingBottom="5dp">
+            android:paddingEnd="10dp"
+            android:paddingBottom="9dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tab_extra_fields"
+                    android:clickable="true"
+                    android:onClick="onTabClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="26.25dp"
+                        android:layout_height="24.38dp"
+                        android:layout_marginTop="9.28dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_loans_tab" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.81dp"
+                        android:fontFamily="@font/ropasans_regular"
+                        android:gravity="top"
+                        android:text="ЗАЙМЫ"
+                        android:paddingEnd="1dp"
+                        android:paddingStart="1dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="7dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tab_extra_fields_second"
+                    android:clickable="true"
+                    android:onClick="onTabClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="26.25dp"
+                        android:layout_height="24.38dp"
+                        android:layout_marginTop="9.28dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_loans_tab" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.81dp"
+                        android:fontFamily="@font/ropasans_regular"
+                        android:gravity="top"
+                        android:text="ЗАЙМЫ"
+                        android:paddingEnd="1dp"
+                        android:paddingStart="1dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="invisible"
+                        android:background="@color/white"
+                        android:layout_marginTop="7dp"/>
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -41,30 +127,36 @@
                     android:id="@+id/tab_loans"
                     android:clickable="true"
                     android:onClick="onTabClick"
-                    android:layout_width="95dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@drawable/ic_tabs_selected"
                     android:gravity="bottom|center_horizontal"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="31.88dp"
-                        android:layout_height="28.13dp"
+                        android:layout_width="26.25dp"
+                        android:layout_height="24.38dp"
                         android:layout_marginTop="9.28dp"
                         android:adjustViewBounds="true"
                         android:src="@drawable/ic_loans_tab" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:layout_marginTop="10.28dp"
-                        android:layout_marginBottom="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.81dp"
                         android:fontFamily="@font/ropasans_regular"
                         android:gravity="top"
                         android:text="ЗАЙМЫ"
+                        android:paddingEnd="1dp"
+                        android:paddingStart="1dp"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="invisible"
+                        android:background="@color/white"
+                        android:layout_marginTop="7dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -79,29 +171,37 @@
                     android:id="@+id/tab_cards"
                     android:clickable="true"
                     android:onClick="onTabClick"
-                    android:layout_width="95dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="bottom|center_horizontal"
                     android:orientation="vertical"
                     android:paddingTop="4dp">
 
                     <ImageView
-                        android:layout_width="31.88dp"
-                        android:layout_height="28.13dp"
+                        android:layout_width="26.25dp"
+                        android:layout_height="24.38dp"
                         android:adjustViewBounds="true"
                         android:src="@drawable/ic_cards_tab" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:layout_marginTop="10.28dp"
-                        android:layout_marginBottom="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4.81dp"
                         android:fontFamily="@font/ropasans_regular"
                         android:gravity="top"
                         android:text="КАРТЫ"
+                        android:paddingEnd="1dp"
+                        android:paddingStart="1dp"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="invisible"
+                        android:background="@color/white"
+                        android:layout_marginTop="7dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -116,28 +216,36 @@
                     android:id="@+id/tab_credits"
                     android:clickable="true"
                     android:onClick="onTabClick"
-                    android:layout_width="95dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="bottom|center_horizontal"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="34dp"
-                        android:layout_height="30dp"
+                        android:layout_width="28dp"
+                        android:layout_height="26dp"
                         android:adjustViewBounds="true"
                         android:src="@drawable/ic_credits_tab" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="16dp"
-                        android:layout_marginTop="7dp"
-                        android:layout_marginBottom="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.81dp"
                         android:fontFamily="@font/ropasans_regular"
                         android:gravity="top"
                         android:text="КРЕДИТЫ"
+                        android:paddingEnd="1dp"
+                        android:paddingStart="1dp"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white"
+                        android:visibility="invisible"
+                        android:layout_marginTop="7dp"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

@@ -58,7 +58,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-class ExtraFieldsFragment : Fragment(){
+class ExtraFieldsSecondFragment : Fragment(){
     private lateinit var thisView: View
     private lateinit var mainActivity: MainActivity
 
@@ -102,7 +102,7 @@ class ExtraFieldsFragment : Fragment(){
 
         val back: ImageView =thisView.findViewById(R.id.back)
         val title: TextView =thisView.findViewById(R.id.title)
-        title.text = Application.data.appConfig.extraField2
+        title.text = Application.data.appConfig.extraField6
 
         back.setOnClickListener {
             if (web.canGoBack()) {
@@ -551,7 +551,7 @@ class ExtraFieldsFragment : Fragment(){
             Application.aff_sub5
 
 
-        return Application.data.appConfig.extraField0 + "&aff_sub1=$aff_sub1&aff_sub2=$aff_sub2&aff_sub3=$aff_sub3" +
+        return Application.data.appConfig.extraField4 + "&aff_sub1=$aff_sub1&aff_sub2=$aff_sub2&aff_sub3=$aff_sub3" +
                 "&aff_sub4=$aff_sub4&aff_sub5=$aff_sub5"
     }
 

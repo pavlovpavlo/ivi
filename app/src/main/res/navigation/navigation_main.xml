@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/loansFragment"
+    app:startDestination="@id/extraFieldsFragment"
     android:id="@+id/navigation_main">
 
     <fragment
@@ -20,13 +20,19 @@
     <fragment
         android:id="@+id/cardsFragment"
         android:name="org.vse.zaimy.online.ui.propositions.CardsFragment"
-        android:label="fragment_maps"
+        android:label="fragment_cards"
         tools:layout="@layout/fragment_cards" />
 
     <fragment
-        android:id="@+id/cardsFragment"
-        android:name="org.vse.zaimy.online.ui.propositions.CardsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_cards" />
+        android:id="@+id/extraFieldsFragment"
+        android:name="org.vse.zaimy.online.ui.extra_fields.ExtraFieldsFragment"
+        android:label="fragment_extra_field"
+        tools:layout="@layout/fragment_extra_field" />
+
+    <fragment
+        android:id="@+id/extraFieldsSecondFragment"
+        android:name="org.vse.zaimy.online.ui.extra_fields.ExtraFieldsSecondFragment"
+        android:label="fragment_extra_field_second"
+        tools:layout="@layout/fragment_extra_field" />
 
 </navigation>
